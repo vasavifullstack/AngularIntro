@@ -1,2 +1,28 @@
+<!-- one way binding -->
+<!-- String interpolation-process of binding the
+string to the html -->
 
-<Comp1></Comp1>
+{{BankName}}:{{BankAccount}}
+<P>{{BankAccount}}</P>
+<P>{{getCustomerName()}}</P>
+
+<!-- property Binding-process of binding the value 
+to the property to the HTML. -->
+
+<input type="text" value="Admin"/>
+
+<input type="text" value="customerID"/>
+
+<!-- <input type="checkbox"/> -->
+Female:<input [type]="inputtype"/>
+Male:<input [type]="inputtype"/>
+<a [href]="Link">Misard</a>
+<img [src]="imagesource" />
+
+<!-- button click,mouse over,mouse leave,key press
+<button (click)="evtClick();evt2Click()">click me</button>
+<p (mouseover)="evtmouseover()">{{BankName}} and {{BankAccount}}</p>
+
+<!- $event use case :can you get the element details -->
+<!-- <p (click)="evtPKeyEvent($event)">fourth paragraph</p>
+<input type="text" (keyup)="evtKeyEvent($event)"> --> 

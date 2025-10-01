@@ -26,3 +26,17 @@ Male:<input [type]="inputtype"/>
 <!- $event use case :can you get the element details -->
 <!-- <p (click)="evtPKeyEvent($event)">fourth paragraph</p>
 <input type="text" (keyup)="evtKeyEvent($event)"> --> 
+
+<input [(ngModel)]="BankName" />
+<a [ngModel]="Link">Misard Learning</a>
+<select [value]="roles">
+    <option value="1">Admin1</option>
+    <option value="2">Admin2</option>
+</select>
+
+<select [value]="CustomerID">
+    <option value="1">101</option>
+    <option value="2">102</option>
+</select>
+
+<input type="text" [value]="CustomerID" (keypress)="______________"/>

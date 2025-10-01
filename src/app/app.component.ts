@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  roles=2;
+  CustomerID=102;
   BankName="HDFC";
   BankAccount=1234;
 

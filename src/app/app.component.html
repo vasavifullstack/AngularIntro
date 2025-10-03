@@ -2,32 +2,31 @@
 <!-- String interpolation-process of binding the
 string to the html -->
 
-{{BankName}}:{{BankAccount}}
+<!-- {{BankName}}:{{BankAccount}}
 <P>{{BankAccount}}</P>
 <P>{{getCustomerName()}}</P>
 
-<!-- property Binding-process of binding the value 
+<!- property Binding-process of binding the value
 to the property to the HTML. -->
 
-<input type="text" value="Admin"/>
+<!-- <input type="text" value="Admin"/>
 
-<input type="text" value="customerID"/>
+<input type="text" value="customerID"/> -->
 
 <!-- <input type="checkbox"/> -->
-Female:<input [type]="inputtype"/>
+<!-- Female:<input [type]="inputtype"/>
 Male:<input [type]="inputtype"/>
 <a [href]="Link">Misard</a>
-<img [src]="imagesource" />
+<img [src]="imagesource" /> -->
 
-<!-- button click,mouse over,mouse leave,key press
-<button (click)="evtClick();evt2Click()">click me</button>
-<p (mouseover)="evtmouseover()">{{BankName}} and {{BankAccount}}</p>
+<!-- button click,mouse over,mouse leave,key press-->
+ <!-- <button (click)="evtClick();evt2Click()">click here</button> -->
+<!--$event use case :can you get the element details -->
 
-<!- $event use case :can you get the element details -->
 <!-- <p (click)="evtPKeyEvent($event)">fourth paragraph</p>
 <input type="text" (keyup)="evtKeyEvent($event)"> --> 
 
-<input [(ngModel)]="BankName" />
+<!-- <input [(ngModel)]="BankName" />
 <a [ngModel]="Link">Misard Learning</a>
 <select [value]="roles">
     <option value="1">Admin1</option>
@@ -40,3 +39,12 @@ Male:<input [type]="inputtype"/>
 </select>
 
 <input type="text" [value]="CustomerID" (keypress)="______________"/>
+
+<!- class -->
+<!-- <div class="paragraph">Hello world</div>
+
+<div [ngClass]="colorType=='grey'?'paragraph':''">Learning fullstack</div>
+<div [ngClass]="customer=='randomcustomer'?'randomcustomer':''">bestcustomer</div> -->
+
+
+<app-oneway></app-oneway>

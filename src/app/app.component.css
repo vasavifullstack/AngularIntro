@@ -1,6 +1,16 @@
-/* p{
+ /* p{
     background-color: pink;
 }
 h1{
     background-color: pink;
-}aX */
+} */
+    
+.paragraph{
+    background-color:grey;
+}
+.dailycustomer{
+    background-color:pink;
+}
+.randomcustomer{
+    background-color:red;
+}

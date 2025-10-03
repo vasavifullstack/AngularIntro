@@ -27,12 +27,15 @@ export class AppComponent {
   evt2Click(){
     console.log("running");
   }
-  evtmouseover(){
+  evtMouseOver(){
     console.log("hello world");
   }
 
+// colorType="grey";
+// customer="randomcustomer";
 
 
+
+// }
 }
-
 

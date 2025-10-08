@@ -1,0 +1,14 @@
+<!-- directive
+[ngStyle] -->
+<p [ngStyle]="{'color':'pink',
+'font-size':'20px'}">Directive concepts</p>
+
+<p [ngStyle]="myStyle">
+    ngstyle directive
+</p>
+
+<p [ngStyle]="dynamicStyle"(click)="toggleHighlight()">
+    click me toggle
+</p>
+<!-- class -property.to group the relative elements-->
+<p class="customer">bankcustomer</p>

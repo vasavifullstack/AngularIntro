@@ -6,12 +6,14 @@ import { CompAComponent } from './compA/compA.component';
 import { FormsModule } from '@angular/forms';
 import { OnewayComponent } from './oneway/oneway.component';
 import { TwowayComponent } from './twoway/twoway.component';
+import { DirectiveComponent } from './directive/directive.component';
 @NgModule({
   declarations: [
     AppComponent,
     CompAComponent,
     OnewayComponent,
     TwowayComponent,
+    DirectiveComponent,
   
   ],
   imports: [

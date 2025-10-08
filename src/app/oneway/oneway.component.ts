@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Button} from '@bootstrap/core';
+// import {Button} from '@bootstrap/core';
 
 @Component({
   selector: 'app-oneway',

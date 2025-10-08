@@ -89,7 +89,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "styles:[
+            "node_modules/bootstrapp/dist/css/bootstrap.min.css",
+            "src/style.css"]
+      
           }
         }
       }

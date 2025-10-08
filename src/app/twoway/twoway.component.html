@@ -1,0 +1,29 @@
+<!-- ngModelChange -->
+
+<!-- $event capture updated the changes in ngModelchanges
+ 
+-->
+<!-- $event contain textbox value -->
+<input
+[ngModel]="customerRole"
+(ngModelChange)="evtngModelChange($event)" />
+
+<P>{{customerRole}}</P>
+<input [(ngModel)]="employeeName">
+<p>{{employeeName}}</p>
+<!-- two-way data binding-combination of property[]and
+event() using ngModel.
+syntax-[(ngModel)]=[ngModel]+(ngModelChange) -->
+<!-- directive-which is useful to add behaviour of the element
+ngstyle- -->
+
+<!-- syntax-[ngStyle]="{'style-name':styleValue}"
+[ngStyle]="syleobject" -->
+<div style="background-color:pink">hii vasavi</div>
+<button (click)="btnClick()">click me here</button>
+<div [ngStyle]="{'background-color':divColor,
+                  'color':fontColor}">
+    welcome my world</div>
+<div [ngStyle]="{'background-color': isAdmin == true ? divColor:'green'}"> 
+    hello world
+</div>

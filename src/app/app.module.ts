@@ -4,19 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CompAComponent } from './compA/compA.component';
 import { FormsModule } from '@angular/forms';
-import { CompBComponent } from './comp-b/comp-b.component';
 import { OnewayComponent } from './oneway/oneway.component';
-
+import { TwowayComponent } from './twoway/twoway.component';
 @NgModule({
   declarations: [
     AppComponent,
     CompAComponent,
-    CompBComponent,
-    OnewayComponent
+    OnewayComponent,
+    TwowayComponent,
+  
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]   // 1 st batsman Abhishek sharma

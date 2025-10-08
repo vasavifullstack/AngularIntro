@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { OnewayComponent } from './oneway/oneway.component';
 import { TwowayComponent } from './twoway/twoway.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { ContentComponent } from './content/content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +15,7 @@ import { DirectiveComponent } from './directive/directive.component';
     OnewayComponent,
     TwowayComponent,
     DirectiveComponent,
+    ContentComponent,
   
   ],
   imports: [

@@ -12,3 +12,33 @@
 </p>
 <!-- class -property.to group the relative elements-->
 <p class="customer">bankcustomer</p>
+
+<!-- conditional classes -->
+<div [ngClass]="{
+    'active':isActive,
+    'error':hasError
+}">status</div>
+<!-- array class -->
+ <div [ngClass]="['vasavi','sreenu']">sliblings</div>
+<!-- print vasavi,sreenu -->
+ <div>{{names}}</div>           
+<!-- ngIF -->
+ <!-- structural directive can used by *symbol
+ property directive by [] -->
+<div *ngIf="voteEligibility>=18">
+    voteEligibility for voting.(Age:{{voteEligibility}})
+</div>
+<div *ngFor="let item of items">
+    {{item}}
+</div>
+
+
+
+
+
+
+
+
+
+
+

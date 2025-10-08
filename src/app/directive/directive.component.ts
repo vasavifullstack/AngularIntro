@@ -25,5 +25,11 @@ get dynamicStyle(){
     this.isHighlighted=!
   this.isHighlighted;
   }
+  //conditional classes 
+  isActive=true;
+  hasError=false;
+  names=['vasavi','sreenu'];
+  voteEligibility=20;
+  items=['Books','Pencil','pen'];
 
 }

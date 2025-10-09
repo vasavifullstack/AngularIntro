@@ -32,4 +32,11 @@ get dynamicStyle(){
   voteEligibility=20;
   items=['Books','Pencil','pen'];
 
+evtClick(element:any){
+  console.log(element);
+}
+//ng-template
+empName="sreenu";
+//switch()
+days=7;
 }

@@ -28,17 +28,50 @@
 <div *ngIf="voteEligibility>=18">
     voteEligibility for voting.(Age:{{voteEligibility}})
 </div>
-<div *ngFor="let item of items">
-    {{item}}
+<div *ngFor="let item of items;let $index=index">
+    {{$index}}--{{item}}
 </div>
+<!-- local reference-to pass the element as a parameter to the event . -->
+<!-- to pass the reference of the element through the any event
+ -->
 
+<p #customer>seema ruchulu</p>
+<button (click)="evtClick(customer)">click me !</button>
 
+<!-- ng-template-a template block that can ne used to render
+content dynamically.it not defaulty trigger.whenever the call the
+it triggers
+ -->
+<p *ngIf="empName=='vasavi';else template">
+    person is an employee
+</p>
+<ng-template #template>
+    <div>
+        person is not employee
+    </div>
+</ng-template>
 
-
-
-
-
-
-
-
-
+<!-- ngswitch -->
+<div [ngSwitch]="days">
+    <p *ngSwitchCase="1">
+        Monday
+    </p>
+    <p *ngSwitchCase="2">
+        Tueday
+    </p>
+    <p *ngSwitchCase="3">
+        Wednesday
+    </p>
+    <p *ngSwitchCase="4">
+        Thursday
+    </p>
+    <p *ngSwitchCase="5">
+        Friday
+    </p>
+    <p *ngSwitchCase="6">
+        Saturday
+    </p>
+    <p *ngSwitchCase="7">
+        Sunday
+    </p>
+</div>

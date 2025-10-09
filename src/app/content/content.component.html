@@ -1,3 +1,56 @@
-<!-- viewchild-element of the html it gives the reference of that element to the typescript 
-by using @viewchild-element
-@viewchild-to capture the reference of the element from html to typescript. -->
+<!-- viewchild-element of the html it gives the reference of that element 
+to the typescript by using @viewchild-element.
+@viewchild-to capture the reference of the element from html to typescript -->
+
+<p #paragraph>view child</p>
+<button (click)="btnClick()">Click me</button>
+<p #pressword>elementref</p>
+<input type="text" #firstName/>
+<span (click)="presskey()">pressKey</span>
+
+<!-- content-child -->
+<!-- to captures the other component content by using 
+contentchild -->
+<!-- ng-content can capture the app.component
+ and it will be injected into ng-content.
+to updates the app.component by using ng-content when
+the contentchild used -->
+
+<!-- <ng-content select="[job]"></ng-content> -->
+ <ng-content></ng-content>
+
+<ng-template #testTemplate>
+    <p>ng template concept</p>
+</ng-template>
+<h1>Div</h1>
+<div
+     *ngFor="let names of ['vasavi','vijaya','sivareddy','sreenureddy']">
+    <p>{{names}}</p>
+</div>
+<h1>ng-container</h1>
+<ng-container 
+     *ngFor="let x of [100,200,300]">
+    <p>{{x}}</p>
+</ng-container>
+<hr>
+<h1>Dynamic Templates</h1>
+<ng-template let-fn ="Firstname" 
+             let-ln ="lastname"
+             let-hm = "Hometown" 
+             #testTemplate>
+<form>
+    <input [value]="fn" type="text" placeholder="firstname">
+    <br>
+    <input [value]="ln"  type="text" placeholder="lastname">
+    <br>
+    <input [value]="hm"  type="text" placeholder="homeloaction">
+</form>
+</ng-template>
+
+
+<ng-container #containerRef>
+</ng-container>
+
+<button (click)="btnClickme()">
+    Click me For Generate the form
+</button>
